@@ -1,1 +1,2 @@
-# YODA-2022-Group13-FPGA
+# YODA Project 2022 - Group 13
+## FPGA

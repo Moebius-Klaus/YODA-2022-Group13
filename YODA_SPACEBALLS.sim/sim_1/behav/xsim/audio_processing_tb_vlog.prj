@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../YODA_SPACEBALLS.srcs/sources_1/imports/minMaxDisplay/BCD_control.v" \
+"../../../../YODA_SPACEBALLS.srcs/sources_1/imports/minMaxDisplay/BCD_to_cathodes.v" \
+"../../../../YODA_SPACEBALLS.srcs/sources_1/imports/minMaxDisplay/anode_control.v" \
+"../../../../YODA_SPACEBALLS.srcs/sources_1/imports/minMaxDisplay/clock_divider.v" \
+"../../../../YODA_SPACEBALLS.srcs/sources_1/imports/minMaxDisplay/refreshcounter.v" \
+"../../../../YODA_SPACEBALLS.srcs/sources_1/imports/minMaxDisplay/show_me_the_money.v" \
+
+sv xil_defaultlib  \
+"../../../../YODA_SPACEBALLS.srcs/sim_1/new/audio_gen.sv" \
+"../../../../YODA_SPACEBALLS.srcs/sources_1/imports/new/pdm_input.sv" \
+"../../../../YODA_SPACEBALLS.srcs/sources_1/imports/new/top.sv" \
+"../../../../YODA_SPACEBALLS.srcs/sim_1/new/audio_processing_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
